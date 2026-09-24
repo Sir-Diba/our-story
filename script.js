@@ -1,77 +1,53 @@
-
-document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Hamburger menu
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobileNav');
-
-  function toggleMenu(){
-    const isOpen = mobileNav.classList.toggle('open');
-    hamburger.classList.toggle('open',isOpen);
-    hamburger.setAttribute('Aria-Expanded', isOpen);
+const herName = "My Love";
+const startDate = "2024-02-14"; // the day you got together (YYYY-MM-DD)
+const yourName = "Yours";
+const letter = `Every day with you feels like my favorite day.
+ 
+You make ordinary moments feel magical, and I'm so grateful for you.
+ 
+Thank you for being you. I love you.`;
+// ======================
+ 
+document.getElementById("title").textContent = "For " + herName + " ♥";
+document.getElementById("signature").textContent = "Forever yours, " + yourName;
+ 
+// Days together, counting up
+const days = Math.max(0, Math.floor((Date.now() - new Date(startDate)) / 86400000));
+ 
+function countUp(target) {
+  const el = document.getElementById("days");
+  const step = Math.max(1, Math.ceil(target / 100));
+  let n = 0;
+  const timer = setInterval(() => {
+    n = Math.min(n + step, target);
+    el.textContent = n;
+    if (n >= target) clearInterval(timer);
+  }, 20);
+}
+ 
+// Typing effect
+function typeLetter(i = 0) {
+  const el = document.getElementById("letter");
+  if (i <= letter.length) {
+    el.textContent = letter.slice(0, i);
+    setTimeout(() => typeLetter(i + 1), 45);
+  } else {
+    document.getElementById("signature").classList.add("show");
   }
-
-  function closeMenu() {
-    mobileNav.classList.remove('open');
-    hamburger.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', false);
-  }
-
-  hamburger.addEventListener('click',toggleMenu);
-
-  document.addEventListener('click', (event) => { 
-    if (!hamburgerumburger.contains(event.target) && !mobileNav.contains(event.target)){closeMenu();}
-  })
-
-
-  // Header shadow on scroll
-  const header = document.querySelector('header');
-
-  window.addEventListener('scroll', () => {
-    header.style.boxShadow = window.scrollY > 10
-      ? '0 2px 16px rgba(0,0,0,0.10)'
-      : '0 1px 8px rgba(0,0,0,0.06)';
-  });
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const targetElement = document.querySelector(this.getAttribute('href'));
-      if (targetElement) { 
-        e.preventDefault(); target.scrollIntoView({
-           behavior: 'smooth' 
-          }); 
-      }
-    });
-  });
-
- const animationTargets = [
-  '.step-card','.service-card','.gallery-item',
-   '.hero h2','.hero p','.hero-checks','.hero-actions','.section-header'
-  ];
-
-
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry  => {
-      if (entry.isIntersecting) {
-         entry.target.classList.add('visible'); 
-        observer.unobserve(entry.target); }
-    });
-  }, { threshold: 0.12 });
-
-  animationTargets.forEach(selector => {
-  document.querySelectorAll(selector).forEach(element);
-  elementmclasslist.add('reveal');
-  observer.observe(element);
-  });
-
-  // Staggered delays on grids
-  ['.steps-grid','.services-grid','.gallery-grid'].forEach(gridSelector => {
-    const grid = document.querySelector(gridselector);
-    if (grid) {
-    Array.from(grid.children).forEach(child, index =>  {
-      child.style.transitionDelay = `${index * 80}ms`;
-    });
-  }
-  });
+}
+ 
+// Floating hearts
+function floatHeart() {
+  const h = document.createElement("div");
+  h.className = "heart";
+  h.textContent = ["♥", "❤", "💖", "🌸"][Math.floor(Math.random() * 4)];
+  h.style.left = Math.random() * 100 + "vw";
+  h.style.fontSize = 14 + Math.random() * 26 + "px";
+  h.style.animationDuration = 6 + Math.random() * 6 + "s";
+  document.getElementById("hearts").appendChild(h);
+  setTimeout(() => h.remove(), 12000);
+}
+ 
+countUp(days);
+setTimeout(() => typeLetter(), 1500);
+setInterval(floatHeart, 500);
