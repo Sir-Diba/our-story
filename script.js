@@ -1,11 +1,16 @@
-const herName = "My Love";
-const startDate = "2024-02-14"; // the day you got together (YYYY-MM-DD)
-const yourName = "Yours";
+const herName = "Majola sthandwa sam ndedwa";
+const startDate = "2024-07-23"; // the day you got together (YYYY-MM-DD)
+const yourName = "Mr Matiwane";
 const letter = `Every day with you feels like my favorite day.
  
-You make ordinary moments feel magical, and I'm so grateful for you.
- 
-Thank you for being you. I love you.`;
+i don't have much to say, i just wanted to tell you how much i love you
+and i appreciate having you as my partner, i know i always say that i love you 
+you're everything and i could ever ask for and more even though sometimes 
+you may be very difficult to deal with i still love you, i love you Majola sthandwa sam 
+and to many more years that i hope we spend together.
+Thank you for loving me thank you for being part of my life (i mean it's not like you had a choice).
+have a good night, byeee
+I love you.`;
 // ======================
  
 document.getElementById("title").textContent = "For " + herName + " ♥";
