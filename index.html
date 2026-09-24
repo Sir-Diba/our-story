@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResCare Hub</title>
+  <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+
+<!--  HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="logo-wrap">
+        <svg width="80" height="44" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="R R Logo">
+          <rect width="80" height="80" rx="11" fill=""/>
+          <text x="8" y="56" font-family="Georgia,serif" font-weight="bold" font-size="50" fill="Red" letter-spacing="-1">R</text>
+          <g transform="translate(80,0) scale(-1,1)">
+            <text x="8" y="56" font-family="Georgia,serif" font-weight="bold" font-size="50" fill="Black" letter-spacing="2">R</text>
+          </g>
+        </svg>
+        <span class="logo-tagline">Spot it. Report it. Repair it.</span>
+      </div>
+      <div class="brand-text">
+        <h1>ResCare Hub</h1>
+        <p>Student Maintenance Solutions</p>
+      </div>
+    </div>
+
+    <nav id="desktopNav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn-nav">Get Help Now</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home"     onclick="closeMenu()">Home</a>
+    <a href="#about"    onclick="closeMenu()">About</a>
+    <a href="#contact"  onclick="closeMenu()">Contact</a>
+    <a href="#contact" class="btn-nav" onclick="closeMenu()">Get Help Now</a>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <span class="badge">Residential Maintenance</span>
+    <h2>Welcome to <span>ResCare Hub</span></h2>
+    <p>
+     Your studies are stressful enough, leave the maintenance issues to us we got you covered.
+    </p>
+      <div class="slide fade" style="background-image: url('https://hickeysafety.ie/wp-content/uploads/2022/02/Home-repair-1.jpg');"></div>
+    
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">
+        Report an Issue
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Our Task -->
+<section class="intro" id="about">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>How We Work</h2>
+      <strong>
+      <p>Our simple three-step process makes it easy to report issues and get them fixed quick and efficiently.</p>
+    </strong>
+    </div>
+    <div class="steps-grid">
+
+      <div class="step-card">
+        <div class="step-icon blue">
+        </div>
+        <div class="step-num">Step 1</div>
+        <h3>Spot It</h3>
+        <strong>
+        <p>Notice any maintenance issue in your space.</p>
+      </strong>
+      </div>
+
+      <div class="step-card">
+        <div class="step-icon amber">
+        </div>
+        <div class="step-num">Step 2</div>
+        <h3>Report It</h3>
+         <strong>
+        <p>Report your maintenance issue via WhatsApp and we will get right on it.</p>
+         </strong>
+      </div>
+
+      <div class="step-card">
+        <div class="step-icon green">
+        </div>
+        <div class="step-num">Step 3</div>
+        <h3>Repair It</h3>
+         <strong>
+        <p>Our team of technicians will work on it in a timely manner.</p>
+         </strong>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--- SERVICES  -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="section-header">
+      
+      <h2>Our Services</h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+       
+        <h3>Plumbing</h3>
+         <strong>
+        <p>Have a problem with your shower, Pipes, drains you can contact us.</p>
+         </strong>
+      </div>
+
+      <div class="service-card">
+        
+        <h3>Electrical</h3>
+         <strong>
+        <p>Need to replace your plugs, bulbs, or have a problem with your stove .</p>
+         </strong>
+      </div>
+
+      <div class="service-card">
+        
+        <h3>General Maintenance</h3>
+        <strong>
+        <p>have a problem with your door, windows, Wifi connection.</p>
+        </strong>
+      </div>
+
+      
+<div class="service-card">
+        
+        <h3>Safety</h3>
+        <strong>
+        <p>smoke detectors and fire alarms are not responsive we have you covered.</p>
+        </strong>
+      </div>
+
+    </div>
+    <div class="services-cta">
+      <a href="#contact" class="btn-primary">Contact a Service</a>
+    </div>
+  </div>
+</section>
+
+
+<!--Our services -->
+<section class="Our repairs" id="Our repairs">
+  <div class="section-inner">
+    <div class="section-header">
+     
+      <h2>Our-Repairs</h2>
+      <p>Real work you can see, Reliable services you can depend on.</p>
+    </div>
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="https://plus.unsplash.com/premium_photo-1726862763100-9a7fcd6009be?q=80&w=1969&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plumbing repair" loading="lazy"/>
+        <div class="gallery-overlay"><span>Plumbing</span></div>
+        <div class="gallery-label"><span>Plumbing</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://plus.unsplash.com/premium_photo-1683134505842-507b0dde76b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Electrical work" loading="lazy"/>
+        <div class="gallery-overlay"><span>Electrical</span></div>
+        <div class="gallery-label"><span>Electrical</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1643509867448-57001e0c333d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="General Maintenance" loading="lazy"/>
+        <div class="gallery-overlay"><span>General Maintenance</span></div>
+        <div class="gallery-label"><span>General Maintenance</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://plus.unsplash.com/premium_photo-1750719071949-cee843a33f77?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Safety" loading="lazy"/>
+        <div class="gallery-overlay"><span>Safety</span></div>
+        <div class="gallery-label"><span>Safety</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <div class="logo-wrap">
+        <svg width="44" height="44" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="80" height="80" rx="12" fill="#0e7fad"/>
+          <text x="8" y="56" font-family="Georgia,serif" font-weight="bold" font-size="50" fill="white" letter-spacing="-1">R</text>
+          <g transform="translate(80,0) scale(-1,1)">
+            <text x="8" y="56" font-family="Georgia,serif" font-weight="bold" font-size="50" fill="white" letter-spacing="-0,1">R</text>
+          </g>
+        </svg>
+        <span class="logo-tagline">Spot it. Report it. Fix it.</span>
+      </div>
+      <p>ResCare Hub is your trusted maintenance partner. We believe every Student deserves a well kept, safe, and comfortable living area.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <div class="contact-items"> 
+        <div class="contact-item">
+          <div>
+            <div class="ci-text"> +27 83 456 3444</div>
+            <div class="ci-sub">Mon–Fri, 8am–6pm</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div>
+            <div class="ci-text">+27 83 456 3555</div>
+            <div class="ci-sub">Whatsapp</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-text">support@rescarehub.com</div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-text"> Sol Plaatje University, Private Bag X5008<br>Kimberley, 8300</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-col">
+   
+        
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> ResCare Hub Maintenance Services. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
